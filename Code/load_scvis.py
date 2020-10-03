@@ -5,7 +5,8 @@ import tensorflow as tf
 import yaml
 
 import sys
-sys.path.insert(0, "/home/gregory/Desktop/ELDR/scvis/lib/scvis/")
+sys.path.insert(0, "/home/kachau/Documents/ELDR/scvis/lib/scvis/")
+sys.path.insert(0, "/home/kachau/Documents/ELDR/scvis/lib/")
 from vae import GaussianVAE
 
 def load_vae(input_dim, model_file, feature_transform = None):
@@ -14,7 +15,7 @@ def load_vae(input_dim, model_file, feature_transform = None):
     
     # Model Configuration
     try:
-        config_file_yaml = open("/home/gregory/Desktop/ELDR/scvis/lib/scvis/config/model_config.yaml", "r")
+        config_file_yaml = open("/home/kachau/Documents/ELDR/scvis/lib/scvis/config/model_config.yaml", "r")
         config = yaml.load(config_file_yaml, Loader = yaml.FullLoader)
         config_file_yaml.close()
     except yaml.YAMLError as exc:
