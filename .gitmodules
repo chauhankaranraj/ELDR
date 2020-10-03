@@ -1,0 +1,3 @@
+[submodule "path_to_submodule"] 
+  path = scvis 
+  url = https://github.com/shahcompbio/scvis.git
