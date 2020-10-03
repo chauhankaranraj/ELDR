@@ -20,8 +20,9 @@ seaborn = "*"
 plotly = "*"
 tqdm = "*"
 torch = "*"
-tensorflow = "*"
+tensorflow = "<2.0"
 pyyaml = "*"
+trailets = "<5.0"
 
 [requires]
-python_version = "3.8.3"
+python_version = "3.6.3"
